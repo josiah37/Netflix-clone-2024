@@ -1,0 +1,54 @@
+/* .outter,
+nav {
+   display: flex;
+   background-color: #212323;
+} */
+
+.Header {
+   position: fixed; /* Fixes the header at aa spesific  position */
+   /* since it is header we want it to be fixed at the top and we dont want any thraling on the sideds so  */
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: #212323;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+nav {
+   display: flex;
+   /* width: 50%; */
+   justify-content: space-between;
+   padding: 0 1em;
+   align-items: center;
+}
+
+nav ul {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   color: beige;
+}
+
+ul li {
+   margin: 0 20px;
+}
+
+/* icons */
+.rightIcons {
+   list-style: none;
+   color: whitesmoke;
+   display: flex;
+   padding: 0 2em;
+   li:not(:nth-last-child(2)) {
+      padding-right: 1em;
+      /* color: aqua; */
+   }
+}
+
+/* .rightIcons li:nth-last-child(2) {
+   color: blueviolet;
+   padding-right: -1px;
+   margin-right: -1px;
+} */

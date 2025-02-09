@@ -1,0 +1,37 @@
+.Footer {
+   margin-top: 40%;
+}
+.Footer ul {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   width: 2%;
+   color: white;
+   padding: 0 10%;
+}
+
+.footerLinks {
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+
+   li a {
+      color: rgba(240, 248, 255, 0.696);
+      text-decoration: none;
+   }
+}
+
+.footerLinks li a:hover {
+   text-decoration: underline;
+   color: whitesmoke;
+}
+
+.firstCol li:nth-last-child(1) {
+   border: rgba(234, 222, 222, 0.726) solid 2px;
+   padding: 0 1em;
+}
+
+.Footer p {
+   color: white;
+   padding: 1% 11%;
+}

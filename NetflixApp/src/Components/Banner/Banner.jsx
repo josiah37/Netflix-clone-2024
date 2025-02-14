@@ -5,22 +5,23 @@ import requests from "../../utils/My_requests";
 import "./Banner.css";
 
 const Banner = () => {
-   const [movie, setMovie] = useState({});
+   const [movie, setMovie] = useState();
+// useEffect(()=>{} call, [])
 
    useEffect(() => {
       const fetchData = async () => {
          try {
-            const request = await axiosinstnace.get(requests.fetchNetflixOriginals);
-            console.log(request);
-            setMovie(request.data.results[Math.floor(Math.random() * request.data.results.length)]);
+            const requestedData = await axiosinstnace.get(requests.fetchNetflixOriginals);
+            console.log(requestedData);
+            setMovie(requestedData.data.results[Math.floor(Math.random() * requestedData.data.results.length)]);
          } catch (error) {
-            console.log("error", error);
+            console.error("there is some error when fectching", error);
          }
       };
       fetchData();
    }, []);
 
-//    console.log("i have recived the data it it here:", movie);
+   //    console.log("i have recived the data it it here:", movie);
 
    const truncate = (text, limit) => {
       return text?.length > limit ? text.substring(0, limit) + "..." : text;

@@ -24,17 +24,17 @@ const Header = () => {
 
             <div className={styles.rightIcons}>
                <li>
-                  <PersonIcon />
-               </li>
-               <li>
                   <SearchIcon />
                </li>
+
                <li>
                   <NotificationsIcon />
                </li>
+
                <li>
                   <PersonIcon />
                </li>
+
                <li>
                   <ArrowDropDownIcon />
                </li>

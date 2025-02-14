@@ -12,7 +12,7 @@ const RowLists = () => {
          <Row title={"Action Movies"} fetchUrl={requests.fetchActionMovies} />
          <Row title={"Comedy Movies"} fetchUrl={requests.fetchComedyMovies} />
          <Row title={"Horror Movies"} fetchUrl={requests.fetchHorrorMovies} />
-         <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
+         {/* <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />   try to brake one of the index  and also to mention animation as a row */}
          <Row title="TV Shows" fetchUrl={requests.fetchTvShow} />
          <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
       </div>

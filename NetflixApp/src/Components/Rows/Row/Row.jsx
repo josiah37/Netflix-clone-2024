@@ -44,7 +44,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       }
    };
 
-   console.log("what is set:   ", trailerUrl);
+//    console.log("what is set:   ", trailerUrl);
 
    const opts = {
       height: "390",
@@ -70,7 +70,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
          </div>
 
          {/* display the trailer  */}
-         <div style={{ padding: "40px" }}>{trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}</div>
+         <div> {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}</div>
 
          {/* we could have use youtube embadding  but that also requires the id of the video since the link has 'embed' in teh middle of the link. aye akalen demo we have alrady the link so replace madrg the link with embedding ..... but this also accepts */}
 

@@ -1,13 +1,33 @@
 .Footer {
-   margin-top: 40%;
+   margin-top: 7%;
+   display: flex;
+   justify-content: center;
+   background-color: rgba(0, 0, 0, 0.485);
+}
+.innerContainer {
+   width: 90%;
+   margin-top: 2%;
+   /* background-color: black; */
 }
 .Footer ul {
    display: flex;
    justify-content: space-between;
    list-style: none;
-   width: 2%;
+   width: 17%;
    color: white;
-   padding: 0 10%;
+   padding-left: 10%;
+}
+
+/* you can simplify it by giving class name  at least for the ul and call it here but you can also see that
+ you can use the class name like this. the reson i started from the footer is because i amy have another ul
+  in the main.css or anoy other place */
+.Footer ul li:first-child:hover,
+.Footer ul li:nth-child(3):hover {
+   color: rgb(96, 107, 254);
+}
+.Footer ul li:last-child:hover,
+.Footer ul li:nth-child(2):hover {
+   color: rgb(246, 76, 93);
 }
 
 .footerLinks {
@@ -33,5 +53,6 @@
 
 .Footer p {
    color: white;
-   padding: 1% 11%;
+   padding: 1% 10%;
+   /* text-align: start; */
 }

@@ -72,11 +72,13 @@ button:focus-visible {
 :root {
    --font-base: "Lexend", sans-serif;
    --font-second-base: "Inter", sans-serif;
+   --base-font-size: 16px;
    --bg-color: #111;
    font-family: Lexend, sans-serif;
+   font-size: var(--base-font-size); /* This sets z base for rem */
+   --px: calc(var(--base-font-size) / 16); /* This gives 1rem */
 }
 
 body {
    background-color: var(--bg-color);
 }
-

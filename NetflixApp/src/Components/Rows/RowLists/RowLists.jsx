@@ -11,10 +11,12 @@ const RowLists = () => {
          <Row title={"Trending Now"} fetchUrl={requests.fetchTrending} />
          <Row title={"Action Movies"} fetchUrl={requests.fetchActionMovies} />
          <Row title={"Comedy Movies"} fetchUrl={requests.fetchComedyMovies} />
-         <Row title={"Horror Movies"} fetchUrl={requests.fetchHorrorMovies} />
-         {/* <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />   try to brake one of the index  and also to mention animation as a row */}
+         <Row title={"Animation Movies"} fetchUrl={requests.fetchAnimationMovies} />
+         <Row title={"Adventure Movies"} fetchUrl={requests.fetchAdventure} />
+         <Row title={"Family Movies"} fetchUrl={requests.fetchFamilyMovies} />
+         <Row title={"Science Fiction"} fetchUrl={requests.fetchScienceFictionMovies} />
+         <Row title="Mystery" fetchUrl={requests.fetchMystery} />
          <Row title="TV Shows" fetchUrl={requests.fetchTvShow} />
-         <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
       </div>
    );
 };

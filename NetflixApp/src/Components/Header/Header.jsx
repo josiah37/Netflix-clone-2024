@@ -13,12 +13,24 @@ const Header = () => {
             <nav>
                <img src={netflixLogo} width="70px" alt="netflix Logo" />
                <ul>
-                  <li>Home</li>
-                  <li>Tv shows</li>
-                  <li>Movies</li>
-                  <li>Latest</li>
-                  <li>My List</li>
-                  <li>Browse by Languages</li>
+                  <li>
+                     <a href="">Home</a>
+                  </li>
+                  <li>
+                     <a href="">Tv shows</a>
+                  </li>
+                  <li>
+                     <a href="">Movies</a>
+                  </li>
+                  <li>
+                     <a href="">Latest</a>
+                  </li>
+                  <li>
+                     <a href="">My List</a>
+                  </li>
+                  <li>
+                     <a href="">Browse by Languages</a>
+                  </li>
                </ul>
             </nav>
 

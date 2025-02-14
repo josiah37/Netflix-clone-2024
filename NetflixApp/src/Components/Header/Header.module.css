@@ -1,9 +1,3 @@
-/* .outter,
-nav {
-   display: flex;
-   background-color: #212323;
-} */
-
 .Header {
    position: fixed; /* Fixes the header at aa spesific  position */
    /* since it is header we want it to be fixed at the top and we dont want any thraling on the sideds so  */
@@ -28,11 +22,15 @@ nav ul {
    display: flex;
    justify-content: space-between;
    list-style: none;
-   color: beige;
 }
 
-ul li {
+nav ul li a {
    margin: 0 20px;
+   text-decoration: none;
+   color: beige;
+}
+nav ul li a:hover {
+   color: rgb(247, 38, 52);
 }
 
 /* icons */
